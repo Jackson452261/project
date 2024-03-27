@@ -20,10 +20,9 @@ const products = [
     description: '這是產品 3 的詳細描述。',
     price: 300
   },
-   
 ];
 
-const ProductDetail = () => {
+const RoomDetail = () => {
   const { id } = useParams();
   const product = products.find(product => product.id === id);
 
@@ -40,4 +39,4 @@ const ProductDetail = () => {
   );
 };
 
-export default ProductDetail;
+export default RoomDetail;
